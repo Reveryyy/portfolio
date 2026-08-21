@@ -1,0 +1,39 @@
+.project {
+  height: 30dvh;
+  width: var(--project-width);
+
+  background-color: var(--colore-sfondo-project);
+  border: 1px solid var(--colore-bottone-bordo);
+  border-radius: 8px;
+}
+
+.number_rows {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1dvw;
+  margin-right: 1dvw;
+  margin-top: 2dvh;
+
+  color: var(--colore-testo);
+  font-size: 0.6rem;
+  font-family: var(--font-testo-mono);
+}
+
+.project_title {
+  color: var(--colore-titolo);
+  font-size: 0.95rem;
+  font-weight: bold;
+  font-family: var(--font-sans);
+
+  margin-left: 1dvw;
+  margin-top: 1dvh;
+}
+
+.project_description {
+  color: var(--colore-testo);
+
+  margin-top: 1dvh;
+  margin-left: 1dvw;
+  font-size: 0.8rem;
+  font-family: var(--font-sans);
+}

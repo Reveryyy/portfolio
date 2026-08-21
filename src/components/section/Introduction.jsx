@@ -47,11 +47,11 @@ export default function IntroductionSection() {
               <p className={style.number_data}>{anni}</p>
               <p className={style.info_text}>anni di codice</p>
             </div>
-            <div id="anni" classname={style.projects_column}>
+            <div id="anni" className={style.projects_column}>
               <p className={style.number_data}>0</p>
               <p className={style.info_text}>progetti</p>
             </div>
-            <div id="anni" classname={style.linguaggi_column}>
+            <div id="anni" className={style.linguaggi_column}>
               <p className={style.number_data}>3</p>
               <p className={style.info_text}>linguaggi principali</p>
             </div>

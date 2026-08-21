@@ -1,0 +1,12 @@
+.projects_section {
+  min-height: 50dvh;
+}
+
+.projects_grid {
+  margin-left: 2dvw;
+  margin-right: 2dvw;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(var(--project-width), 1fr));
+  row-gap: 20px;
+}

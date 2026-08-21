@@ -29,6 +29,7 @@ body {
 :root {
   --colore-sfondo: #0b0d10;
   --colore-sfondo-header: rgba(11, 13, 16, 0.82);
+  --colore-sfondo-project: #13151a;
   --colore-titolo: #e7e9ec;
   --colore-animazione-testo: #4f8cff;
   --colore-testo: rgba(231, 233, 236, 0.62);
@@ -40,4 +41,5 @@ body {
   --font-testo-mono: "JetBrains Mono", monospace;
   --font-semibold: 400;
   --header-height: 55px;
+  --project-width: 23dvw;
 }

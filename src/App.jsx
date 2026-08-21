@@ -1,6 +1,6 @@
 import Header from "./components/layout/Header";
-import Sezione from "./components/layout/Sezione";
 import Introduction from "./components/section/Introduction";
+import Projects from "./components/section/Projects";
 
 export default function App() {
   return (
@@ -8,9 +8,7 @@ export default function App() {
       <div className="page">
         <Header />
         <Introduction />
-        <Sezione>
-          <p> Sezione 2</p>
-        </Sezione>
+        <Projects />
       </div>
     </>
   );

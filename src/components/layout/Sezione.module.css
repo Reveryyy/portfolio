@@ -4,4 +4,6 @@
 
   scroll-snap-align: start;
   scroll-snap-stop: always;
+
+  border-bottom: 2px solid var(--colore-separatore-bordo);
 }

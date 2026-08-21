@@ -1,0 +1,13 @@
+.cerchio {
+  width: 45vw;
+  height: 45vh;
+
+  background-color: transparent;
+
+  background-image: radial-gradient(
+    50% 85% at 45% 40%,
+    color-mix(in srgb, var(--colore-animazione-testo) 10%, transparent) 0%,
+    color-mix(in srgb, var(--colore-animazione-testo) 5%, transparent) 40%,
+    transparent 80%
+  );
+}

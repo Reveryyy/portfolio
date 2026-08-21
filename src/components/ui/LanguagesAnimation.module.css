@@ -1,0 +1,25 @@
+.languagesAnimation {
+  color: var(--colore-animazione-testo);
+  font-size: 0.65rem;
+  letter-spacing: 1px;
+  font-family: var(--font-testo-mono);
+  margin-right: auto;
+  margin-top: 15dvh;
+}
+
+.Cursor {
+  animation: blink 0.8s infinite;
+  font-weight: bold;
+}
+
+@keyframes blink {
+  0%,
+  50% {
+    opacity: 1;
+  }
+
+  51%,
+  100% {
+    opacity: 0;
+  }
+}

@@ -1,0 +1,68 @@
+.header {
+  display: flex;
+  padding: 16px 40px 16px 35px;
+  color: var(--colore-testo);
+  border-bottom: 1px solid var(--colore-separatore-bordo);
+  align-items: center;
+  background-color: var(--colore-sfondo-header);
+  font-size: 0.7rem;
+  font-family: var(--font-sans);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: var(--header-height);
+
+  z-index: 10;
+}
+
+.bold {
+  font-weight: var(--font-semibold);
+  color: var(--colore-titolo);
+}
+
+.menu_group {
+  display: flex;
+  margin-left: auto;
+  gap: 28px;
+  align-items: center;
+}
+
+.buttons_group {
+  display: flex;
+  margin-left: auto;
+  gap: 6px;
+}
+
+.button {
+  min-width: 26px;
+  min-height: 21px;
+  max-width: 26px;
+  max-height: 21px;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  border: 1px solid var(--colore-bottone-bordo);
+  border-radius: 4px;
+
+  color: var(--colore-testo);
+  font-family: var(--font-mono);
+  font-size: 0.6rem;
+  font-weight: var(--font-semibold);
+
+  transition:
+    color 0.2s,
+    border-color 0.2s;
+}
+
+.button:hover {
+  color: var(--colore-bottone-hover);
+  border-color: var(--colore-bottone-hover);
+
+  cursor: pointer;
+}

@@ -1,0 +1,47 @@
+.menu {
+  display: flex;
+  gap: 1.1rem;
+  list-style: none;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: var(--colore-testo);
+  text-decoration: none;
+  transition: color 0.2s;
+
+  position: relative;
+  padding-bottom: 6px;
+
+  font-weight: var(--font-semibold);
+}
+
+.menu a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) scaleX(0);
+
+  width: 100%;
+  height: 1px;
+  background-color: var(--colore-titolo);
+
+  transition: transform 0.3s ease;
+  transform-origin: center;
+}
+
+.menu a:hover {
+  color: var(--colore-titolo);
+}
+
+.menu a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}

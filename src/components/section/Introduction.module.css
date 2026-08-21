@@ -1,0 +1,90 @@
+.introduction_section {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.column {
+  margin-left: 2dvw;
+  margin-right: auto;
+}
+
+.title {
+  margin-top: 1dvh;
+  margin-left: 0.15dvw;
+  font-family: var(--font-sans);
+  font-weight: bold;
+  color: var(--colore-titolo);
+  font-size: 4rem;
+  letter-spacing: -3px;
+}
+
+.subtitle {
+  margin-top: 1dvh;
+  color: var(--colore-testo);
+  font-family: var(--font-sans);
+  line-height: 1.7rem;
+}
+
+.buttons_row {
+  display: flex;
+  margin-top: 5dvh;
+}
+
+.button {
+  padding: 0.7rem 1rem;
+  background-color: transparent;
+  border-radius: 6px;
+  border: 1px solid var(--colore-bottone-bordo);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+
+  transition: all 0.25s ease-out;
+}
+
+.projects_button {
+  background-color: var(--colore-titolo);
+  color: black;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.projects_button:hover {
+  transform: translateY(-0.2rem);
+  cursor: pointer;
+}
+
+.github_button {
+  background-color: transparent;
+  color: var(--colore-titolo);
+  font-weight: bold;
+  margin-left: 1dvw;
+}
+
+.github_button:hover {
+  transform: translateY(-0.2rem);
+  cursor: pointer;
+
+  border-color: var(--colore-bottone-hover);
+}
+
+.info_row {
+  display: flex;
+  justify-content: space-between;
+  width: 25dvw;
+  color: var(--colore-titolo);
+
+  margin-top: 15dvh;
+}
+
+.number_data {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.info_text {
+  font-size: 0.8rem;
+  color: var(--colore-testo);
+  text-align: left;
+  margin-left: 1px;
+}

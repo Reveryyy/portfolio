@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: system-ui, sans-serif;
+  background-color: #0b0d10;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+.page {
+  height: 100dvh;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.page::-webkit-scrollbar {
+  display: none;
+}
+
+:root {
+  --colore-sfondo: #0b0d10;
+  --colore-sfondo-header: rgba(11, 13, 16, 0.82);
+  --colore-titolo: #e7e9ec;
+  --colore-animazione-testo: #4f8cff;
+  --colore-testo: rgba(231, 233, 236, 0.62);
+  --colore-titolo-numero: rgba(231, 233, 236, 0.62);
+  --colore-separatore-bordo: rgba(255, 255, 255, 0.08);
+  --colore-bottone-bordo: rgba(255, 255, 255, 0.18);
+  --colore-bottone-hover: #4f8cff;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-testo-mono: "JetBrains Mono", monospace;
+  --font-semibold: 400;
+  --header-height: 55px;
+}

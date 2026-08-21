@@ -1,0 +1,7 @@
+.section {
+  min-height: 100dvh;
+  padding-top: var(--header-height);
+
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}

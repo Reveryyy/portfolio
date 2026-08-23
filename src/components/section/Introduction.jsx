@@ -12,11 +12,14 @@ export default function IntroductionSection() {
         <Cerchio />
         <div id="info-column" className={style.column}>
           <LanguagesAnimations />
-          <p className={style.title}>Reveryy</p>
+          <div className={style.titolo_wrapper}>
+            <p className={style.number}>01</p>
+            <p className={style.title}>Reveryy</p>
+          </div>
           <p className={style.subtitle}>
             Studente di informatica e telecomunicazioni. Scrivo software
             <br />
-            da quando avevo dieci anni: backend in Java, client in Kotlin, e
+            da quando avevo undici anni: backend in Java, client in Kotlin, e
             <br />
             adesso React.
           </p>
@@ -24,6 +27,9 @@ export default function IntroductionSection() {
             <button
               id="projects"
               className={`${style.button} ${style.projects_button}`}
+              onClick={() =>
+                document.getElementById("progetti").scrollIntoView()
+              }
             >
               Vedi i progetti
             </button>

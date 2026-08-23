@@ -1,0 +1,47 @@
+.skill_section {
+  --section-height: 30dvh;
+  display: flex;
+  gap: 5dvw;
+
+  padding-bottom: 5dvh;
+
+  padding-top: calc(var(--header-height) + 5dvh);
+}
+
+.info_row {
+  display: flex;
+
+  margin: 0 2dvw;
+  margin-bottom: 3dvh;
+
+  color: var(--colore-testo-scuro);
+  font-size: 0.65rem;
+  font-family: var(--font-testo-mono);
+  font-weight: bold;
+
+  gap: 10px;
+  align-items: baseline;
+}
+
+.info_title {
+  color: var(--colore-titolo);
+  font-size: 1rem;
+  font-family: var(--font-sans);
+}
+
+.skill_column {
+  color: var(--colore-titolo);
+  font-size: 0.75rem;
+  font-family: var(--font-sans);
+  line-height: 20px;
+}
+
+.skill_title {
+  color: var(--colore-testo-scuro);
+  margin-bottom: 1dvh;
+
+  font-family: var(--font-testo-mono);
+  font-size: 0.6rem;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}

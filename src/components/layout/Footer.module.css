@@ -1,0 +1,14 @@
+.footer {
+  height: 8dvh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin: 0 2dvw;
+
+  color: var(--colore-testo-scuro);
+  font-size: 0.6rem;
+  font-weight: bold;
+  font-family: var(--font-testo-mono);
+}

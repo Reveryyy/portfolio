@@ -8,6 +8,19 @@
   margin-right: auto;
 }
 
+.titolo_wrapper {
+  display: flex;
+  gap: 1dvw;
+  align-items: baseline;
+}
+
+.number {
+  color: var(--colore-testo-scuro);
+  font-size: 0.65rem;
+  font-family: var(--font-testo-mono);
+  font-weight: bold;
+}
+
 .title {
   margin-top: 1dvh;
   margin-left: 0.15dvw;

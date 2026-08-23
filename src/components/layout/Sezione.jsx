@@ -7,6 +7,7 @@ export default function Sezione({ children, className, id }) {
       <div id={id} className={`${style.section} ${className || ""}`}>
         {children}
       </div>
+      <div className={style.separator} />
     </>
   );
 }

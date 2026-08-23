@@ -32,6 +32,8 @@ body {
   --colore-sfondo-project: #13151a;
   --colore-titolo: #e7e9ec;
   --colore-animazione-testo: #4f8cff;
+  --colore-testo-highlights: #416ecc;
+  --colore-testo-scuro: #575a5c;
   --colore-testo: rgba(231, 233, 236, 0.62);
   --colore-titolo-numero: rgba(231, 233, 236, 0.62);
   --colore-separatore-bordo: rgba(255, 255, 255, 0.08);

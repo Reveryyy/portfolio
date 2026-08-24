@@ -150,7 +150,13 @@ export default function Projects({ t, language }) {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <Project key={index} progetto={p} t={t} language={language} />
+                  <Project
+                    key={index}
+                    index={index}
+                    progetto={p}
+                    t={t}
+                    language={language}
+                  />
                 </motion.div>
               ))}
             </AnimatePresence>

@@ -23,3 +23,9 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 768px) {
+  .languagesAnimation {
+    margin-top: 4dvh;
+  }
+}

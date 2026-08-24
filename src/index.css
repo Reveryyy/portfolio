@@ -10,8 +10,8 @@ html,
 body {
   font-family: system-ui, sans-serif;
   background-color: #0b0d10;
-  overflow: hidden;
   scroll-behavior: smooth;
+  overflow: hidden;
 }
 
 .page {
@@ -26,7 +26,7 @@ body {
   display: none;
 }
 
-:root {
+:root[data-theme="scuro"] {
   --colore-sfondo: #0b0d10;
   --colore-sfondo-header: rgba(11, 13, 16, 0.82);
   --colore-sfondo-project: #13151a;
@@ -44,4 +44,10 @@ body {
   --font-semibold: 400;
   --header-height: 55px;
   --project-width: 23dvw;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --project-width: 100%;
+  }
 }

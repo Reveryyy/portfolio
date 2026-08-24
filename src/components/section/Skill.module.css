@@ -1,6 +1,7 @@
 .skill_section {
   --section-height: 30dvh;
   display: flex;
+  flex-direction: row;
   gap: 5dvw;
 
   padding-bottom: 5dvh;
@@ -44,4 +45,18 @@
   font-size: 0.6rem;
   font-weight: bold;
   letter-spacing: 1.5px;
+}
+
+@media (max-width: 768px) {
+  .skill_section {
+    flex-direction: column;
+    gap: 3dvh;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .info_row {
+    margin: 0;
+    margin-bottom: 1dvh;
+  }
 }

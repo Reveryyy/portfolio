@@ -75,3 +75,21 @@
   font-size: 0.75rem;
   font-family: var(--font-sans);
 }
+
+@media (max-width: 768px) {
+  .direction_section {
+    flex-direction: column;
+    margin-left: 0;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .direction_wrapper {
+    margin-left: 0;
+    margin-top: 3dvh;
+  }
+
+  .separator {
+    display: none;
+  }
+}

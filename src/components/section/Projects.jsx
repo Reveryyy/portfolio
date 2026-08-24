@@ -5,7 +5,7 @@ import progetti from "../../objects/Progetti";
 import { useState, useRef, useEffect } from "react";
 import { AnimatePresence, motion } from "motion/react";
 
-export default function Projects() {
+export default function Projects({ t, language }) {
   const [showAll, setShowAll] = useState(false);
   const [search, setSearch] = useState("");
   const [order, setOrder] = useState("recenti");
@@ -63,10 +63,12 @@ export default function Projects() {
             .localeCompare(b.nome.toLowerCase().trim()),
         );
 
-  const sortedProjects = orderedProjects.filter(
-    (p) =>
-      p.nome.toLowerCase().includes(search.toLowerCase()) ||
-      p.description.toLowerCase().includes(search.toLowerCase()),
+  const sortedProjects = orderedProjects.filter((p) =>
+    t === "it"
+      ? p.nome_it.toLowerCase().includes(search.toLowerCase())
+      : p.nome_en.toLowerCase().includes(search.toLowerCase()) || t === "it"
+        ? p.description_it.toLowerCase().includes(search.toLowerCase())
+        : p.description_en.toLowerCase().includes(search.toLowerCase()),
   );
 
   const projectToShow =
@@ -79,21 +81,26 @@ export default function Projects() {
         <div className={style.info_row}>
           <div className={style.info_wrapper}>
             <p>02</p>
-            <p className={style.section_title}>Progetti</p>
-            <p>{progetti.length} progetti</p>
+            <p className={style.section_title}>{t.titolo_progetti}</p>
+            <p>
+              {progetti.length} {t.progetti_progetti}
+            </p>
           </div>
           <div className={style.utils_wrapper}>
             <input
               type="text"
-              placeholder="cerca..."
+              placeholder={t.progetti_search}
               value={search}
               onChange={(e) => setSearch(e.target.value)}
             />
             <button
-              onClick={() => setOrder(order === "recenti" ? "A-Z" : "recenti")}
+              onClick={() =>
+                setOrder(order === "recenti" ? "A-Z" : t.progetti_recenti)
+              }
             >
               <span key={order} className={style.order_text}>
-                ordina: {order}
+                {t.progetti_ordina}:{" "}
+                {order === "recenti" ? t.progetti_recenti : order}
               </span>
             </button>
           </div>
@@ -107,18 +114,18 @@ export default function Projects() {
               tagActive === "Tutti" ? style.tags_active : ""
             }`}
           >
-            Tutti
+            {t.progetti_tag_tutti}
           </button>
-          {tags.map((t) => {
+          {tags.map((tag) => {
             return (
               <button
-                key={`tags_${t}`}
-                onClick={() => setTagActive(t)}
+                key={`tags_${tag}`}
+                onClick={() => setTagActive(tag)}
                 className={`${style.tags_button} ${
-                  tagActive === t ? style.tags_active : ""
+                  tagActive === tag ? style.tags_active : ""
                 }`}
               >
-                {t}
+                {tag}
               </button>
             );
           })}
@@ -131,6 +138,7 @@ export default function Projects() {
             <AnimatePresence>
               {projectToShow.map((p, index) => (
                 <motion.div
+                  style={{ width: "100%" }}
                   key={p.nome}
                   layout
                   initial={
@@ -142,7 +150,7 @@ export default function Projects() {
                   exit={{ opacity: 0 }}
                   transition={{ duration: 0.2 }}
                 >
-                  <Project key={index} progetto={p} />
+                  <Project key={index} progetto={p} t={t} language={language} />
                 </motion.div>
               ))}
             </AnimatePresence>
@@ -153,7 +161,7 @@ export default function Projects() {
             onClick={() => setShowAll(true)}
             className={style.showall_button}
           >
-            Mostra altri {missing}
+            {t.progetti_mostra_altri} {missing}
           </button>
         )}
       </Sezione>

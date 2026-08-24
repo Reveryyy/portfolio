@@ -11,3 +11,10 @@
     transparent 80%
   );
 }
+
+@media (max-width: 768px) {
+  .cerchio {
+    width: 100vw;
+    height: 30vh;
+  }
+}

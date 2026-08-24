@@ -1,0 +1,66 @@
+const translations = {
+  it: {
+    titolo_contatti: "Contatti",
+    parliamo_codice: "Parliamo di codice.",
+    contatti_desc1:
+      "Scrivimi per un progetto, una collaborazione o semplicemente per",
+    contatti_desc2: "confrontarci su Java, Kotlin e React.",
+    percorso_desc1:
+      "Studente di informatica e telecomunicazioni. Scrivo software",
+    percorso_desc2:
+      "da quando avevo undici anni: backend in Java, client in Kotlin, e",
+    percorso_desc3: "adesso React.",
+    percorso_project_button: "Vedi i progetti",
+    percorso_anni_codice: "anni di codice",
+    percorso_progetti: "progetti",
+    percorso_linguaggi: "linguaggi principali",
+    titolo_progetti: "Progetti",
+    progetti_progetti: "progetti",
+    progetti_search: "cerca...",
+    progetti_recenti: "recenti",
+    progetti_ordina: "ordina",
+    progetti_tag_tutti: "Tutti",
+    progetti_mostra_altri: "Mostra altri",
+    titolo_percorso: "Percorso",
+    titolo_competenze: "Competenze",
+    competenze_strumenti: "strumenti",
+    menu_chi_sono: "Chi sono",
+    menu_progetti: "Progetti",
+    menu_percorso: "Percorso",
+    menu_competenze: "Competenze",
+    menu_contatti: "Contatti",
+  },
+  en: {
+    titolo_contatti: "Contact",
+    parliamo_codice: "Let's talk code.",
+    contatti_desc1:
+      "Write to me about a project, a collaboration, or simply to",
+    contatti_desc2: "talk about Java, Kotlin, and React.",
+    percorso_desc1:
+      "Computer science and telecommunications student. I've been writing software",
+    percorso_desc2:
+      "since I was eleven: backend in Java, clients in Kotlin, and",
+    percorso_desc3: "now React.",
+    percorso_project_button: "View projects",
+    percorso_anni_codice: "years coding",
+    percorso_progetti: "projects",
+    percorso_linguaggi: "main languages",
+    titolo_progetti: "Projects",
+    progetti_progetti: "projects",
+    progetti_search: "search...",
+    progetti_recenti: "recent",
+    progetti_ordina: "sort",
+    progetti_tag_tutti: "All",
+    progetti_mostra_altri: "Show more",
+    titolo_percorso: "Journey",
+    titolo_competenze: "Skills",
+    competenze_strumenti: "tools",
+    menu_chi_sono: "About me",
+    menu_progetti: "Projects",
+    menu_percorso: "Journey",
+    menu_competenze: "Skills",
+    menu_contatti: "Contact",
+  },
+};
+
+export default translations;

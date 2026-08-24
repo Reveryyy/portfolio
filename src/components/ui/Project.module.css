@@ -95,3 +95,31 @@
   font-family: var(--font-testo-mono);
   font-weight: bold;
 }
+
+@media (max-width: 768px) {
+  .project {
+    width: var(--project-width);
+    min-height: 220px;
+    height: auto;
+  }
+
+  .number_rows {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+
+  .tags_row {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+
+  .separator {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+
+  .stato_row {
+    margin-left: 4vw;
+    margin-right: 4vw;
+  }
+}

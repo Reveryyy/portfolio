@@ -2,10 +2,14 @@ import Sezione from "../layout/Sezione";
 import Cerchio from "../ui/Cerchio";
 import LanguagesAnimations from "../ui/LanguagesAnimation";
 import style from "./Introduction.module.css";
+import progetti from "../../objects/Progetti";
 
-export default function IntroductionSection() {
+export default function IntroductionSection({ t }) {
   const annoCorrente = new Date();
   const anni = annoCorrente.getFullYear() - 2021;
+
+  const linguaggi = [...new Set(progetti.flatMap((p) => p.tags))];
+
   return (
     <>
       <Sezione id="chi-sono" className={style.introduction_section}>
@@ -17,11 +21,11 @@ export default function IntroductionSection() {
             <p className={style.title}>Reveryy</p>
           </div>
           <p className={style.subtitle}>
-            Studente di informatica e telecomunicazioni. Scrivo software
+            {t.percorso_desc1}
             <br />
-            da quando avevo undici anni: backend in Java, client in Kotlin, e
+            {t.percorso_desc2}
             <br />
-            adesso React.
+            {t.percorso_desc3}
           </p>
           <div id="buttons_row" className={style.buttons_row}>
             <button
@@ -31,7 +35,7 @@ export default function IntroductionSection() {
                 document.getElementById("progetti").scrollIntoView()
               }
             >
-              Vedi i progetti
+              {t.percorso_project_button}
             </button>
             <button
               id="github"
@@ -51,15 +55,15 @@ export default function IntroductionSection() {
           <div id="info_row" className={style.info_row}>
             <div id="anni" className={style.anni_column}>
               <p className={style.number_data}>{anni}</p>
-              <p className={style.info_text}>anni di codice</p>
+              <p className={style.info_text}>{t.percorso_anni_codice}</p>
             </div>
             <div id="anni" className={style.projects_column}>
-              <p className={style.number_data}>0</p>
-              <p className={style.info_text}>progetti</p>
+              <p className={style.number_data}>{progetti.length}</p>
+              <p className={style.info_text}>{t.percorso_progetti}</p>
             </div>
             <div id="anni" className={style.linguaggi_column}>
-              <p className={style.number_data}>3</p>
-              <p className={style.info_text}>linguaggi principali</p>
+              <p className={style.number_data}>{linguaggi.length}</p>
+              <p className={style.info_text}>{t.percorso_linguaggi}</p>
             </div>
           </div>
         </div>

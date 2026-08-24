@@ -1,22 +1,22 @@
 import style from "./Contacts.module.css";
 import Sezione from "../layout/Sezione";
 
-export default function Contacts() {
+export default function Contacts({ t }) {
   return (
     <>
       <Sezione id="contatti" className={style.contacts_section}>
         <div className={style.info_row}>
           <p>05</p>
-          <p className={style.info_title}>Contatti</p>
+          <p className={style.info_title}>{t.titolo_contatti}</p>
         </div>
 
         <div className={style.section_row}>
           <div className={style.column}>
-            <p className={style.title}>Parliamo di codice.</p>
+            <p className={style.title}>{t.parliamo_codice}</p>
             <p className={style.description}>
-              Scrivimi per un progetto, una collaborazione o semplicemente per
+              {t.contatti_desc1}
               <br />
-              confrontarci su Java, Kotlin e React.
+              {t.contatti_desc2}
             </p>
           </div>
           <div className={style.utils_column}>

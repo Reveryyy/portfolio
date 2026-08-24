@@ -16,6 +16,8 @@
   height: var(--header-height);
 
   z-index: 10;
+
+  transition: background-color 0.25s ease-in-out;
 }
 
 .bold {

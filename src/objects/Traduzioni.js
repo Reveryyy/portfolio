@@ -5,15 +5,12 @@ const translations = {
     contatti_desc1:
       "Scrivimi per un progetto, una collaborazione o semplicemente per",
     contatti_desc2: "confrontarci su Java, Kotlin e React.",
-    percorso_desc1:
-      "Studente di informatica e telecomunicazioni. Scrivo software",
-    percorso_desc2:
-      "da quando avevo undici anni: backend in Java, client in Kotlin, e",
-    percorso_desc3: "adesso React.",
-    percorso_project_button: "Vedi i progetti",
-    percorso_anni_codice: "anni di codice",
-    percorso_progetti: "progetti",
-    percorso_linguaggi: "linguaggi principali",
+    intro_desc1:
+      "Scrivo software da quando avevo undici anni: conosco le spigot-api e springboot con Java, uso kotlin per le app e adesso sto imparando React.",
+    intro_project_button: "Vedi i progetti",
+    intro_anni_codice: "anni di codice",
+    intro_progetti: "progetti",
+    intro_linguaggi: "linguaggi principali",
     titolo_progetti: "Progetti",
     progetti_progetti: "progetti",
     progetti_search: "cerca...",
@@ -36,15 +33,12 @@ const translations = {
     contatti_desc1:
       "Write to me about a project, a collaboration, or simply to",
     contatti_desc2: "talk about Java, Kotlin, and React.",
-    percorso_desc1:
-      "Computer science and telecommunications student. I've been writing software",
-    percorso_desc2:
-      "since I was eleven: backend in Java, clients in Kotlin, and",
-    percorso_desc3: "now React.",
-    percorso_project_button: "View projects",
-    percorso_anni_codice: "years coding",
-    percorso_progetti: "projects",
-    percorso_linguaggi: "main languages",
+    intro_desc1:
+      "I’ve been writing software since I was eleven: I have experience with the Spigot API and Spring Boot using Java, I use Kotlin for app development, and I’m currently learning React.",
+    intro_project_button: "View projects",
+    intro_anni_codice: "years coding",
+    intro_progetti: "projects",
+    intro_linguaggi: "main languages",
     titolo_progetti: "Projects",
     progetti_progetti: "projects",
     progetti_search: "search...",

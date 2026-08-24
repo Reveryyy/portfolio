@@ -20,13 +20,7 @@ export default function IntroductionSection({ t }) {
             <p className={style.number}>01</p>
             <p className={style.title}>Reveryy</p>
           </div>
-          <p className={style.subtitle}>
-            {t.percorso_desc1}
-            <br />
-            {t.percorso_desc2}
-            <br />
-            {t.percorso_desc3}
-          </p>
+          <p className={style.subtitle}>{t.intro_desc1}</p>
           <div id="buttons_row" className={style.buttons_row}>
             <button
               id="projects"
@@ -35,7 +29,7 @@ export default function IntroductionSection({ t }) {
                 document.getElementById("progetti").scrollIntoView()
               }
             >
-              {t.percorso_project_button}
+              {t.intro_project_button}
             </button>
             <button
               id="github"
@@ -55,15 +49,15 @@ export default function IntroductionSection({ t }) {
           <div id="info_row" className={style.info_row}>
             <div id="anni" className={style.anni_column}>
               <p className={style.number_data}>{anni}</p>
-              <p className={style.info_text}>{t.percorso_anni_codice}</p>
+              <p className={style.info_text}>{t.intro_anni_codice}</p>
             </div>
             <div id="anni" className={style.projects_column}>
               <p className={style.number_data}>{progetti.length}</p>
-              <p className={style.info_text}>{t.percorso_progetti}</p>
+              <p className={style.info_text}>{t.intro_progetti}</p>
             </div>
             <div id="anni" className={style.linguaggi_column}>
               <p className={style.number_data}>{linguaggi.length}</p>
-              <p className={style.info_text}>{t.percorso_linguaggi}</p>
+              <p className={style.info_text}>{t.intro_linguaggi}</p>
             </div>
           </div>
         </div>

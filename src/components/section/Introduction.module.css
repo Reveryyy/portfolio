@@ -36,6 +36,7 @@
   color: var(--colore-testo);
   font-family: var(--font-sans);
   line-height: 1.7rem;
+  width: 24dvw;
 }
 
 .buttons_row {

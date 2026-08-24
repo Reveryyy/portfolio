@@ -11,7 +11,7 @@ export default function Project({ progetto, className, language, index }) {
         }}
       >
         <div className={style.number_rows}>
-          <p>{String(index).padStart(2, "0")}</p>
+          <p>{String(index + 1).padStart(2, "0")}</p>
           <p>{progetto.anno}</p>
         </div>
         <p id={`${progetto.nome}_title`} className={style.project_title}>

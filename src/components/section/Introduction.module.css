@@ -56,8 +56,8 @@
 
 .projects_button {
   background-color: var(--colore-titolo);
-  color: black;
-  font-weight: 400;
+  color: var(--colore-sfondo);
+  font-weight: bold;
   letter-spacing: -0.5px;
 }
 

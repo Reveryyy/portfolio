@@ -1,6 +1,6 @@
 import style from "./Project.module.css";
 
-export default function Project({ progetto, className, t, language }) {
+export default function Project({ progetto, className, language, index }) {
   const tags = [...new Set(progetto.tags)];
   return (
     <>
@@ -11,7 +11,7 @@ export default function Project({ progetto, className, t, language }) {
         }}
       >
         <div className={style.number_rows}>
-          <p>01</p>
+          <p>{String(index).padStart(2, "0")}</p>
           <p>{progetto.anno}</p>
         </div>
         <p id={`${progetto.nome}_title`} className={style.project_title}>

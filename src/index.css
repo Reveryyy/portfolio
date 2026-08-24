@@ -9,7 +9,7 @@
 html,
 body {
   font-family: system-ui, sans-serif;
-  background-color: #0b0d10;
+  background-color: var(--colore-sfondo);
   scroll-behavior: smooth;
   overflow: hidden;
 }
@@ -39,6 +39,26 @@ body {
   --colore-separatore-bordo: rgba(255, 255, 255, 0.08);
   --colore-bottone-bordo: rgba(255, 255, 255, 0.18);
   --colore-bottone-hover: #4f8cff;
+  --font-sans: "IBM Plex Sans", system-ui, sans-serif;
+  --font-testo-mono: "JetBrains Mono", monospace;
+  --font-semibold: 400;
+  --header-height: 55px;
+  --project-width: 23dvw;
+}
+
+:root[data-theme="chiaro"] {
+  --colore-sfondo: #f3f3f5;
+  --colore-sfondo-header: #f3f3f5;
+  --colore-sfondo-project: #e9e9e991;
+  --colore-titolo: #0b0d10;
+  --colore-animazione-testo: #2873fd;
+  --colore-testo-highlights: #164fc9;
+  --colore-testo-scuro: #575a5c;
+  --colore-testo: rgb(122, 122, 122);
+  --colore-titolo-numero: rgba(109, 109, 110, 0.568);
+  --colore-separatore-bordo: rgba(168, 168, 168, 0.281);
+  --colore-bottone-bordo: rgb(53, 52, 52);
+  --colore-bottone-hover: #206bf7;
   --font-sans: "IBM Plex Sans", system-ui, sans-serif;
   --font-testo-mono: "JetBrains Mono", monospace;
   --font-semibold: 400;

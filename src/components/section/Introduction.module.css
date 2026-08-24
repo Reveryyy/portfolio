@@ -122,7 +122,8 @@
   .subtitle {
     font-size: 0.85rem;
     line-height: 1.5rem;
-    width: 60dvh;
+    width: 80%;
+    margin-right: 1dvw;
   }
 
   .subtitle br {
@@ -161,5 +162,25 @@
     margin-top: 6dvh;
     gap: 0;
     justify-content: space-between;
+  }
+
+  .buttons_row {
+    margin-top: 3dvh;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .github_button {
+    margin-left: 0;
+  }
+
+  .introduction_section {
+    flex-direction: column;
+  }
+
+  .column {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 4dvh;
   }
 }

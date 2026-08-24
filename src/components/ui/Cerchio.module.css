@@ -18,3 +18,10 @@
     height: 30vh;
   }
 }
+
+@media (min-width: 760px) and (max-width: 1024px) {
+  .cerchio {
+    width: 100vw;
+    height: 30vh;
+  }
+}

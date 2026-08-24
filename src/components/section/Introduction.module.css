@@ -122,6 +122,7 @@
   .subtitle {
     font-size: 0.85rem;
     line-height: 1.5rem;
+    width: 60dvh;
   }
 
   .subtitle br {
@@ -147,5 +148,18 @@
 
   .languagesAnimation {
     margin-top: 4dvh;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .subtitle {
+    width: 55dvh;
+  }
+
+  .info_row {
+    width: 90vw;
+    margin-top: 6dvh;
+    gap: 0;
+    justify-content: space-between;
   }
 }

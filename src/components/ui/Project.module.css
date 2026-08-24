@@ -122,4 +122,12 @@
     margin-left: 4vw;
     margin-right: 4vw;
   }
+
+  .project_title {
+    margin-left: 4dvw;
+    margin-top: 2dvh;
+  }
+  .project_description {
+    margin-left: 4dvw;
+  }
 }

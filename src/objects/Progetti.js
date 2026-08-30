@@ -20,7 +20,7 @@ const progetti = [
     description_en:
       "A Java library that simplifies the management of YAML configuration files for Minecraft plugins.",
     anno: "2026",
-    tags: ["Java", "Library"],
+    tags: ["Java", "Library", "Claude"],
     github: "https://github.com/Reveryyy/revconfig",
     stato_it: "Completato",
     stato_en: "Completed",
@@ -33,7 +33,7 @@ const progetti = [
     description_en:
       "A Java library that simplifies SQLite database management for Minecraft plugins, inspired by the Spring Boot approach.",
     anno: "2026",
-    tags: ["Java", "SQLite", "Library"],
+    tags: ["Java", "SQLite", "Library", "Claude"],
     github: "https://github.com/Reveryyy/revdata",
     stato_it: "Completato",
     stato_en: "Completed",

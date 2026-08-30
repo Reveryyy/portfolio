@@ -23,26 +23,25 @@ export default function Projects({ t, language }) {
     const calculateItemsPerRow = () => {
       if (!gridRef.current) return;
 
-      const items = gridRef.current.children;
+      const items = Array.from(gridRef.current.children);
 
-      if (items.length === 0) return;
-
-      const firstItemTop = items[0].getBoundingClientRect().top;
-
-      let count = 0;
-
-      for (const item of items) {
-        const itemTop = item.getBoundingClientRect().top;
-
-        if (Math.abs(itemTop - firstItemTop) < 1) {
-          count++;
-        }
+      if (items.length === 0) {
+        setItemsPerRow(0);
+        return;
       }
 
-      setItemsPerRow(count);
+      const firstTop = items[0].getBoundingClientRect().top;
+
+      const itemsInFirstRow = items.filter((item) => {
+        const top = item.getBoundingClientRect().top;
+
+        return Math.abs(top - firstTop) < 2;
+      }).length;
+
+      setItemsPerRow(itemsInFirstRow);
     };
 
-    calculateItemsPerRow();
+    requestAnimationFrame(calculateItemsPerRow);
 
     window.addEventListener("resize", calculateItemsPerRow);
 
@@ -56,12 +55,15 @@ export default function Projects({ t, language }) {
   const orderedProjects =
     order === "recenti"
       ? [...progetti].sort((a, b) => b.anno - a.anno)
-      : [...progetti].sort((a, b) =>
-          a.nome
+      : [...progetti].sort((a, b) => {
+          const nomeA = language === "it" ? a.nome_it : a.nome_en;
+          const nomeB = language === "it" ? b.nome_it : a.nome_en;
+
+          return nomeA
             .toLowerCase()
             .trim()
-            .localeCompare(b.nome.toLowerCase().trim()),
-        );
+            .localeCompare(nomeB.toLowerCase().trim());
+        });
 
   const sortedProjects = orderedProjects.filter((p) =>
     t === "it"
@@ -94,9 +96,7 @@ export default function Projects({ t, language }) {
               onChange={(e) => setSearch(e.target.value)}
             />
             <button
-              onClick={() =>
-                setOrder(order === "recenti" ? "A-Z" : t.progetti_recenti)
-              }
+              onClick={() => setOrder(order === "recenti" ? "A-Z" : "recenti")}
             >
               <span key={order} className={style.order_text}>
                 {t.progetti_ordina}:{" "}
@@ -135,20 +135,21 @@ export default function Projects({ t, language }) {
           className={`${style.projects_grid_wrapper}  ${showAll ? style.expanded : ""}`}
         >
           <div ref={gridRef} className={style.projects_grid}>
-            <AnimatePresence>
+            <AnimatePresence mode="popLayout">
               {projectToShow.map((p, index) => (
                 <motion.div
-                  style={{ width: "100%" }}
-                  key={p.nome}
+                  key={p.nome_it}
                   layout
-                  initial={
-                    showAll && index >= itemsPerRow
-                      ? { opacity: 0 }
-                      : { opacity: 1 }
-                  }
+                  initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
-                  transition={{ duration: 0.2 }}
+                  transition={{
+                    layout: {
+                      duration: 0.4,
+                      ease: "easeInOut",
+                    },
+                    opacity: { duration: 0.2 },
+                  }}
                 >
                   <Project
                     key={index}

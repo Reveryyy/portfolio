@@ -12,6 +12,32 @@ const progetti = [
     stato_it: "Completato",
     stato_en: "Completed",
   },
+  {
+    nome_it: "RevConfig",
+    nome_en: "RevConfig",
+    description_it:
+      "Una libreria Java che semplifica la gestione dei file di configurazione YAML per i plugin Minecraft.",
+    description_en:
+      "A Java library that simplifies the management of YAML configuration files for Minecraft plugins.",
+    anno: "2026",
+    tags: ["Java", "Library"],
+    github: "https://github.com/Reveryyy/revconfig",
+    stato_it: "Completato",
+    stato_en: "Completed",
+  },
+  {
+    nome_it: "RevData",
+    nome_en: "RevData",
+    description_it:
+      "Una libreria Java che semplifica la gestione dei database SQLite per i plugin Minecraft, ispirandosi all'approccio di Spring Boot.",
+    description_en:
+      "A Java library that simplifies SQLite database management for Minecraft plugins, inspired by the Spring Boot approach.",
+    anno: "2026",
+    tags: ["Java", "SQLite", "Library"],
+    github: "https://github.com/Reveryyy/revdata",
+    stato_it: "Completato",
+    stato_en: "Completed",
+  },
 ];
 
 export default progetti;

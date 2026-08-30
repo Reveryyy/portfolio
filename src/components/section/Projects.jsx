@@ -144,10 +144,6 @@ export default function Projects({ t, language }) {
                   animate={{ opacity: 1 }}
                   exit={{ opacity: 0 }}
                   transition={{
-                    layout: {
-                      duration: 0.4,
-                      ease: "easeInOut",
-                    },
                     opacity: { duration: 0.2 },
                   }}
                 >
